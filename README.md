@@ -26,7 +26,7 @@ The results can be tested using Pillow as I am having issues with running OpenCV
 
 ===========================================================================================================================
 
-## Import :
+# Import :
 
 Import the required modules 
 
@@ -45,7 +45,7 @@ from PIL import Image
 import numpy as np
 ```
 
-## Initial Model :
+# Initial Model :
 
 ```
 model = vgg16.VGG16(weights='imagenet',include_top = False)
@@ -75,7 +75,7 @@ top_model = Dense(2,activation='softmax')(top_model)
 nmodel = Model(inputs = model.input, outputs = top_model)
 ```
 
-## Get train and test Data 
+# Get train and test Data 
 
 ```
 img_rows, img_cols = 224,224
@@ -110,7 +110,7 @@ validation_generator = validation_datagen.flow_from_directory(
 ```
 
 
-## Train the model 
+# Train the model 
 
 ```
 from keras.optimizers import RMSprop
@@ -132,7 +132,7 @@ history = nmodel.fit_generator(
 
 ```
 
-## Test Model on your data :
+# Test Model on your data :
 
 ```
 from keras.models import load_model
