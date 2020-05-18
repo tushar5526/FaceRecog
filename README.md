@@ -1,5 +1,5 @@
 # FaceRecog
-## Face Recogntion project based on VGG 16 for MLops task
+## Face Recogntion project based on Transfer learning using VGG 16 for MLops task
 
 ### Project Structure 
 
